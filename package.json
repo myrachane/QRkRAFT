@@ -19,11 +19,12 @@
       "main.js",
       "preload.js",
       "renderer/**/*",
+      "build/**/*",
       "node_modules/**/*"
     ],
     "win": {
       "target": "nsis",
-      "icon": null
+      "icon": "build/icon.png"
     },
     "nsis": {
       "oneClick": false,
@@ -36,6 +37,7 @@
   },
   "devDependencies": {
     "electron": "^33.0.0",
-    "electron-builder": "^26.15.3"
+    "electron-builder": "^26.15.3",
+    "sharp": "^0.35.3"
   }
 }
